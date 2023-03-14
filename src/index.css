@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: aliceblue;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.notes-container{
+  max-width: 980px; 
+  padding: 10px;
+  margin: 10px auto;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+.note{
+  display: flex;
+  flex-direction: column;
+ justify-content: space-between; 
+ border: 1px solid black;
+ padding: 15px;
+ background-color: rgba(228, 228, 24, 0.707);
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ border-radius: 10px;
+ min-height: 250px;
+
+}
+
+.new-note{
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  resize: none;
+  
+  
+}
+form{
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  color: transparent;
+}
+textarea{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  overflow: auto;
+  resize: none;
+}
+input{
+  background-color: transparent;
+
+  border: none;
+  outline: none;
+  outline-color: aqua;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+
+input.value{
+  font-size: 1rem;
+  font-weight: 100;
+}
+.note-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition-duration: 0.2s;
+}
+
+.add-btn{
+  background-color: white;
+  padding: 7px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-box{
+
+  max-width: 980px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+
+
+.search-box input{
+
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline:  none;
+  padding: 5px;
+  margin-top: 0;
+  border-bottom: 1px solid black;
+  
+}
+.search-icons{
+  font-weight: 100;
+}
+
+.header{
+  max-width: 980px;
+  margin: 20px  auto ;
+  }
